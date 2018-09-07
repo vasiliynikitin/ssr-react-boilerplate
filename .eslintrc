@@ -1,0 +1,55 @@
+{
+  "settings": {
+      "import/resolver": {
+          "webpack": {
+              "config": "config/webpack.config.prod.js"
+          }
+      }
+  },
+  "env": {
+      "browser": true,
+      "jest": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "max-len": [1, 120, 2, {"ignoreComments": true}],
+    "prop-types": [0],
+    "react/sort-comp": "off",
+    "react/jsx-filename-extension": "off",
+    "react/default-props-match-prop-types": "off",
+    "no-param-reassign": "off",
+    "react/require-default-props": "off",
+    "import/prefer-default-export": "off",
+    "object-curly-newline": "off",
+    "react/forbid-prop-types": [
+        2,
+        {
+            "forbid": [
+                "any"
+            ]
+        }
+    ],
+    "react/prop-types": [
+        2,
+        {
+            "ignore": [
+                "children",
+                "className",
+                "classes",
+                "dispatch"
+            ]
+        }
+    ],
+    "react/prefer-stateless-function": "off",
+    "arrow-parens": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/jsx-closing-tag-location": "off",
+    "comma-dangle": "off",
+    "consistent-return": "off",
+    "react/no-danger": "off"
+  },
+  "extends": [
+      "airbnb",
+      "plugin:react/recommended"
+  ],
+}
